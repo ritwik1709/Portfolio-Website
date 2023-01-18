@@ -330,6 +330,9 @@
 }
 
 @media(max-width:377px){
+   .heading-about{
+    font-size: 0.9em;
+  }
   .footer-heading{
     font-size: 32px;
   }
