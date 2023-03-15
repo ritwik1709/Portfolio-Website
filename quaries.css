@@ -26,7 +26,10 @@
   .primary-heading-text {
     font-size: 18px;
   }
-
+   .hero-link{
+    font-size: 13px;
+    padding: 10px 24px;
+  }
   .skill-data {
     /* border: solid gray 2px; */
     display: flex;
@@ -57,6 +60,12 @@
   }
   .primary-heading-text {
     font-size: 18px;
+  }
+  .hero-link{
+    font-size: 14px;
+  }
+  .hero-links{
+    margin-left: 10px;
   }
   .about-text {
     font-size: 10px;
@@ -330,14 +339,17 @@
 }
 
 @media(max-width:377px){
-   .heading-about{
-    font-size: 0.9em;
+  .hero-link{
+    font-size: 10px;
   }
   .footer-heading{
     font-size: 32px;
   }
   .footer-subheading{
     font-size: 14px;
+  }
+  .heading-about{
+    font-size: 0.9em;
   }
   .icon-mobile-nav{
     margin-left: 6rem;
@@ -378,6 +390,13 @@
   }
   .hero-img{
     width: 95%;
+  }
+  .hero-link{
+    font-size: 10px;
+    padding: 6px 12px;
+  }
+  .hero-links{
+    gap: 10px;
   }
   .footer-heading{
     font-size: 28px;
