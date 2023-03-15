@@ -28,9 +28,24 @@ function scrollUpfunc() {
 window.addEventListener("scroll", scrollUpfunc);
 
 //////////////// SMOOTH scrolling //////////////////////
-document.querySelector(".main-nav-list").addEventListener("click",function(e){
+
+document.querySelector(".main-nav-list ").addEventListener("click",function(e){
   e.preventDefault();
   if(e.target.classList.contains('main-nav-link')){
+    const id=e.target.getAttribute("href");
+    document.querySelector(id).scrollIntoView({
+      behavior:"smooth",
+    });
+  }
+  //Closing mobile nav
+  if(e.target.classList.contains("main-nav-link")){
+    document.querySelector(".header").classList.toggle("nav-open");
+  }
+});
+
+document.querySelector(".footer-link ").addEventListener("click",function(e){
+  e.preventDefault();
+  if(e.target.classList.contains('footer-link')){
     const id=e.target.getAttribute("href");
     document.querySelector(id).scrollIntoView({
       behavior:"smooth",
@@ -142,6 +157,3 @@ const slider = function () {
   });
 };
 slider();
-
-
-//Background animation
