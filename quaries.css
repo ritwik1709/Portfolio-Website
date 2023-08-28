@@ -57,6 +57,7 @@
 @media (max-width: 885px) {
   .logo {
     height: 14rem;
+    margin-left: -3rem;
   }
   .primary-heading-text {
     font-size: 18px;
@@ -72,6 +73,11 @@
   }
   .main-nav-link {
     font-size: 16px;
+  }
+  .dark-btn, .light-btn{
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    margin-left: 20px;
   }
   .hero {
     display: flex;
@@ -209,6 +215,10 @@
   .main-nav-link {
     font-size: 1.8rem;
   }
+  .nav-btn{
+    display: flex;
+  }
+
   
 }
 @media(max-width:642px){
@@ -237,6 +247,13 @@
   .logo{
     margin-left: -5rem;
     height: 12rem;
+  }
+  .nav-btn{
+    margin-right:-3rem ;
+  }
+  .dark-btn,.light-btn{
+    padding: 1rem;
+    font-size: 1rem;
   }
   .hero-img{
     width: 89%;
@@ -352,7 +369,7 @@
     font-size: 0.9em;
   }
   .icon-mobile-nav{
-    margin-left: 6rem;
+    margin-left: 5rem;
   }
   .testimonial{
     padding: 0 6rem;
@@ -385,8 +402,11 @@
   .logo{
     height: 10rem;
   }
+ 
+
   .icon-mobile-nav{
     font-size: 18px;
+    margin-left: 5rem;
   }
   .hero-img{
     width: 95%;
