@@ -321,7 +321,7 @@ a:hover::before {
   column-gap: 32px;
 }
 .skill-heading {
-  color: #222;
+  color: var(--grey1);
   margin-bottom: 1.6rem;
 }
 .skill-data {
