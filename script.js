@@ -27,6 +27,30 @@ function scrollUpfunc() {
 }
 window.addEventListener("scroll", scrollUpfunc);
 
+////////////////////Changing theme Dark/light//////////////////
+const darkbtn=document.querySelector(".dark-btn");
+const lightbtn=document.querySelector(".light-btn");
+
+function darkMode(){  
+  darkbtn.addEventListener("click",function(e){
+  e.preventDefault();
+   darkbtn.classList.add("hide");
+   document.body.classList.toggle("darkmode");
+   lightbtn.classList.toggle("hide"); 
+  })
+}
+function lightMode(){
+  lightbtn.addEventListener("click",function(e){
+    e.preventDefault();
+    lightbtn.classList.add("hide");
+    darkbtn.classList.toggle("hide"); 
+   document.body.classList.toggle("darkmode");
+
+  })
+}
+darkMode();
+lightMode();
+
 //////////////// SMOOTH scrolling //////////////////////
 
 document.querySelector(".main-nav-list ").addEventListener("click",function(e){
