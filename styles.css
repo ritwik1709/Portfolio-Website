@@ -251,7 +251,7 @@ a:hover::before {
  
 /* Hovering Effect//////////////////// */
 .hero-img:hover .home-blob{
- transform:translateY(-0.8rem) ;
+ transform:scale(1.03); 
 }
 .hero-img:hover .home-blob-img{
  transform:translateY(0.6rem) ;  
@@ -259,12 +259,13 @@ a:hover::before {
 }
 .home-blob-img {
   /* width: 360px; */
-  width: 407px;
+  width: 330px;
   transition: all 0.5s;
+  transform:translateX(0.9rem) ;
 }
 .hero-img {
   /* width: 380px; */
-  width: 80%;
+  width: 60%;
 }
 
 /* /////////////////   ABOUT SECTION  /////////////////// */
