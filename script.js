@@ -181,3 +181,47 @@ const slider = function () {
   });
 };
 slider();
+
+
+//////////////// contact email sending //////////////////////
+function sendMail() {
+  var params = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value,
+  };
+
+
+  if (params.name !== "" && params.email !== "" && params.message !== "") {
+
+    //regular expression for email validation
+    var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    
+    //Invalid email
+    if (!regex.test(params.email))
+      alert("Please Enter a valid email address !");
+
+    else {
+      const serviceID = "service_yz5ghar";
+      const templateID = "template_zb403l9";
+
+
+      emailjs.send(serviceID, templateID, params)
+        .then((res) => {
+          document.getElementById("name").value = "";
+          document.getElementById("email").value = "";
+          document.getElementById("message").value = "";
+          console.log(res);
+          alert("your message sent successfully !!");
+        }
+        )
+        .catch((error) => console.log(error));
+    }
+
+  }
+
+  else {
+    alert("Please fill all the details !!");
+  }
+
+}

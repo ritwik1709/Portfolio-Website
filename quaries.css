@@ -12,21 +12,27 @@
     font-size: 15px;
   }
   .qualification-content {
-   margin-right: 28rem;
-  } 
+    margin-right: 28rem;
+  }
   .skill-heading {
     font-size: 22px;
   }
 }
 
 @media (max-width: 1084px) {
+  .hero-img {
+    width: 70%;
+  }
   .heading-primary {
-    font-size: 48px;
+    font-size: 40px;
   }
   .primary-heading-text {
-    font-size: 18px;
+    font-size: 16px;
   }
-   .hero-link{
+  .about-info {
+    font-size: 14px;
+  }
+  .hero-link {
     font-size: 13px;
     padding: 10px 24px;
   }
@@ -43,11 +49,14 @@
   .main-nav-link {
     font-size: 18px;
   }
-  .about-text {
+  .testimonial__text {
     font-size: 13px;
   }
-  .testimonial-img{
+  .testimonial-img {
     padding: 3rem;
+  }
+  .project-link{
+    font-size: 14px;
   }
   .footer-heading {
     font-size: 48px;
@@ -62,19 +71,20 @@
   .primary-heading-text {
     font-size: 18px;
   }
-  .hero-link{
+  .hero-link {
     font-size: 14px;
   }
-  .hero-links{
+  .hero-links {
     margin-left: 10px;
   }
-  .about-text {
+  /* .about-text {
     font-size: 10px;
-  }
+  } */
   .main-nav-link {
     font-size: 16px;
   }
-  .dark-btn, .light-btn{
+  .dark-btn,
+  .light-btn {
     padding: 1.2rem;
     font-size: 1.2rem;
     margin-left: 20px;
@@ -93,6 +103,11 @@
   }
   .img-about {
     height: 200px;
+  }
+  .about-text {
+    font-size: 13px;
+    padding-right: 1rem;
+    width: 100%;
   }
   .skills {
     display: grid;
@@ -120,41 +135,43 @@
   .main-nav-list {
     gap: 1.8rem;
   }
-  .testimonial__text{
-    font-size: 12px;
+  .testimonial__text {
+    font-size: 10px;
+    width: 115%;
   }
-    .project-link{
+  .project-link {
     font-size: 14px;
-    left: 33%;
+    left: 37%;
     bottom: 3%;
     padding: 1px 8px;
   }
-  .testimonial{
+  .testimonial {
     display: flex;
     flex-direction: column;
     gap: 0;
-    margin-top:2rem ;
+    margin-top: 2rem;
   }
-  .testimonial-img{
+  .testimonial-img {
     border-radius: 20px;
     padding: 0;
-    width: 50%;  
+    width: 50%;
   }
-  .dots{
+  .dots {
     bottom: -8%;
   }
-  .img-box{
-   text-align: center;
+  .img-box {
+    text-align: center;
   }
-  .text-box{
+  .text-box {
     border-radius: 20px;
     width: 50%;
     padding: 2rem 1rem;
+    margin-right: 25px;
   }
-  .slider__btn{
-    font-size:1.25rem ;
+  .slider__btn {
+    font-size: 1.25rem;
     height: 3rem;
-    width:3rem ;
+    width: 3rem;
   }
   .project-heading {
     font-size: 16px;
@@ -215,252 +232,280 @@
   .main-nav-link {
     font-size: 1.8rem;
   }
-  .nav-btn{
+  .nav-btn {
     display: flex;
   }
-
-  
 }
-@media(max-width:642px){
-  .testimonial-img{
+@media (max-width: 642px) {
+  .about {
+    column-gap: 3rem;
+  }
+  .about-text {
+    font-size: 10px;
+  }
+  .testimonial-img {
     border-radius: 20px;
     padding: 0;
     width: 100%;
-  
   }
- .text-box{
+  .text-box {
     border-radius: 20px;
     width: 100%;
     padding: 2rem 1rem;
   }
-  .testimonial__text{
+  .testimonial__text {
     font-size: 10px;
   }
 }
-@media(max-width:433px){
-  .heading-primary{
+@media (max-width: 433px) {
+  .main-nav-link {
+    font-size: 20px;
+  }
+  .heading-primary {
     font-size: 36px;
   }
-  .primary-heading-text{
+  .primary-heading-text {
     font-size: 14px;
   }
-  .logo{
+  .about-info {
+    font-size: 12px;
+  }
+  .logo {
     margin-left: -5rem;
     height: 12rem;
   }
-  .nav-btn{
-    margin-right:-3rem ;
+  .nav-btn {
+    margin-right: -3rem;
   }
-  .dark-btn,.light-btn{
+  .dark-btn,
+  .light-btn {
     padding: 1rem;
     font-size: 1rem;
   }
-  .hero-img{
+  .hero-img {
     width: 89%;
   }
-  .about{
+  .about {
     display: grid;
     grid-template-columns: 1fr;
   }
-  .about-img-box{
+  .about-img-box {
     justify-self: center;
   }
-  .about-text-box{
+  .about-text-box {
     text-align: center;
     padding: 0 4.8rem;
   }
-  .about-text{
+  .about-text {
     width: 100%;
   }
-  .img-about{
+  .img-about {
     height: 160px;
     margin-bottom: 0.5rem;
   }
-  .heading-about{
+  .heading-about {
     margin-bottom: 8px;
   }
 
-  .skills{
+  .skills {
     grid-template-columns: 1fr;
   }
 
-  .skill-heading{
-    font-size: 16px;     
+  .skill-heading {
+    font-size: 16px;
   }
-  .skill-data{
+  .skill-data {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-   
   }
-  .skill-icon{
+  .skill-icon {
     font-size: 25px;
   }
   .skill-icon2 {
     height: 25px;
   }
-  .skill-name{
+  .skill-name {
     font-size: 12px;
   }
   .qualification_title {
-    font-size: 12px;    
-  }  
+    font-size: 12px;
+  }
   .qualification_subtitle {
-    font-size: 10px;   
+    font-size: 10px;
   }
-  
-  .qualification_calendar {
-    font-size: 8px;    
-  }
-  .testimonial{
-    padding: 0 7rem;
-    margin-top:0 ;
 
-  }
-  .testimonial__text{
+  .qualification_calendar {
     font-size: 8px;
   }
+  .testimonial {
+    padding: 0 7rem;
+    margin-top: 0;
+  }
+  .testimonial__text {
+    font-size: 8px;
+  }
+
+  .form-container {
+    padding: 0 60px;
+  }
+  input,
+  textarea {
+    font-size: 14px;
+  }
+
   .project-heading {
     font-size: 12px;
   }
-  .footer-heading{
+  .footer-heading {
     font-size: 36px;
   }
-  .copywrite{
+  .copywrite {
     font-size: 10px;
   }
   .scrollup {
-    right: 1.5rem;   
+    right: 1.5rem;
     bottom: 6%;
   }
 
-.slider__btn--left {
-  left: 13%;
-}
-.slider__btn--right {
-  right: 13%;
-}
-.slider__btn{
-  font-size:1.25rem ;
-  height: 3rem;
-  width:3rem ;
-}
-.dots__dot{
-  height: 10px;
-  width: 10px;
-}
-.dots{
-  bottom: 10%;
-}
-}
-
-@media(max-width:377px){
-  .hero-link{
-    font-size: 10px;
+  .slider__btn--left {
+    left: 13%;
   }
-  .footer-heading{
-    font-size: 32px;
+  .slider__btn--right {
+    right: 13%;
   }
-  .footer-subheading{
-    font-size: 14px;
+  .slider__btn {
+    font-size: 1.25rem;
+    height: 3rem;
+    width: 3rem;
   }
-  .heading-about{
-    font-size: 0.9em;
-  }
-  .icon-mobile-nav{
-    margin-left: 5rem;
-  }
-  .testimonial{
-    padding: 0 6rem;
-    margin-top:0 ;
-
-  }
-  .dots__dot{
+  .dots__dot {
     height: 10px;
     width: 10px;
   }
-  .dots{
+  .dots {
     bottom: 10%;
-
   }
-  .project-link{
-    left: 34%;
+}
+
+@media (max-width: 377px) {
+  .hero-link {
+    font-size: 10px;
+  }
+  .about-text {
+    font-size: 8px;
+  }
+  .form-container {
+    padding: 0 80px;
+  }
+  .footer-heading {
+    font-size: 32px;
+  }
+  .footer-subheading {
+    font-size: 14px;
+  }
+  .heading-about {
+    font-size: 0.9em;
+  }
+  .icon-mobile-nav {
+    margin-left: 5rem;
+  }
+  .testimonial {
+    padding: 0 6rem;
+    margin-top: 0;
+  }
+  .dots__dot {
+    height: 10px;
+    width: 10px;
+  }
+  .dots {
+    bottom: 10%;
+  }
+  .project-link {
+    left: 40%;
     font-size: 10px;
     bottom: 7%;
   }
 }
 
-@media(max-width:345px){
-  .heading-primary{
-    font-size:30px ;
+@media (max-width: 345px) {
+  .heading-primary {
+    font-size: 30px;
     margin-bottom: 2px;
   }
-  .primary-heading-text{
+  .primary-heading-text {
     font-size: 12px;
   }
-  .logo{
+  .about-info {
+    font-size: 10px;
+  }
+  .about-text {
+    font-size: 7px;
+  }
+  .logo {
     height: 10rem;
   }
- 
 
-  .icon-mobile-nav{
+  .icon-mobile-nav {
     font-size: 18px;
     margin-left: 5rem;
   }
-  .hero-img{
+  .hero-img {
     width: 95%;
   }
-  .hero-link{
+  .hero-link {
     font-size: 10px;
     padding: 6px 12px;
   }
-  .hero-links{
+  .hero-links {
     gap: 10px;
   }
-  .footer-heading{
+  .form-container {
+    padding: 0 100px;
+  }
+  .footer-heading {
     font-size: 28px;
   }
-  .footer-subheading{
+  .footer-subheading {
     font-size: 14px;
   }
   .qualification_title {
-    font-size: 10px;    
-  }  
+    font-size: 10px;
+  }
   .qualification_subtitle {
-    font-size: 8px;   
+    font-size: 8px;
   }
-  
+
   .qualification_calendar {
-    font-size: 6px;    
+    font-size: 6px;
   }
-  .heading-about{
+  .heading-about {
     font-size: 0.8em;
   }
-  .about-text{
+  .about-text {
     font-weight: 8px;
   }
-  .testimonial{
+  .testimonial {
     padding: 0 5rem;
-    margin-top:0 ;
+    margin-top: 0;
   }
-  .testimonial__text{
+  .testimonial__text {
     font-size: 7px;
   }
-  .project-link{
-    left: 29%;
+  .project-link {
+    left: 37%;
     font-size: 10px;
     bottom: 7%;
   }
   .project-heading {
     font-size: 9px;
   }
-  .dots__dot{
+  .dots__dot {
     height: 10px;
     width: 10px;
   }
-  .dots{
+  .dots {
     bottom: 15%;
-
   }
 }
